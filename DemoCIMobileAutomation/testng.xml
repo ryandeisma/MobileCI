@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"> 
+<suite guice-stage="DEVELOPMENT" name="Default suite" parallel="tests" thread-count="2"> 
+  <test verbose="1" name="Browser Test"> 
+  	<parameter name="browser" value="OS" />
+    <classes> 
+      <class name="test.AutomationTest"/> 
+    </classes> 
+  </test>
+  <test verbose="2" name="Mobile Test"> 
+  	<parameter name="browser" value="Chrome" />
+    <classes> 
+      <class name="test.AutomationTest"/> 
+    </classes> 
+  </test>
+</suite> 
