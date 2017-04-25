@@ -46,9 +46,9 @@ public class AutomationTest {
 		home.navigateHome(driver, url);
 		home.enterCities(driver, firstFrom, firstEnd);
 		home.enterDates(driver);
-		res.editSearch(driver);
+		res.editSearch(driver, browser);
 		res.editDates(driver);
-		res.editCities(driver, secondFrom, secondEnd);
+		res.editCities(driver, secondFrom, secondEnd);	
 		
 	}
 	
